@@ -16,14 +16,7 @@ class TestAT0011 < Formula
       sha256 "fc76a2d29e6b6a2b6fb4f1a7e649269e9678e0f334a27ba6d87b8375ef75b83f"
 
       def install
-        ENV["GOPATH"] = buildpath
-
-        bin_path = buildpath/"src/github.com/ro-tex/test"
-        bin_path.install Dir["*"]
-        cd bin_path do
-            system "go", "build", "-o", bin/"test", "."
-        end
-        # ...
+        bin.install "test"
       end
     end
     if Hardware::CPU.intel?
@@ -31,14 +24,7 @@ class TestAT0011 < Formula
       sha256 "39715482ea40d095a81faf9f62bedf243f2ebbae09483fe0e90acd7f2e69157e"
 
       def install
-        ENV["GOPATH"] = buildpath
-
-        bin_path = buildpath/"src/github.com/ro-tex/test"
-        bin_path.install Dir["*"]
-        cd bin_path do
-            system "go", "build", "-o", bin/"test", "."
-        end
-        # ...
+        bin.install "test"
       end
     end
   end
@@ -49,14 +35,7 @@ class TestAT0011 < Formula
       sha256 "43e14114ce3751a55dd9ba1f0e29c34475529eb75cb3a2c4cdfd1ebb9612f537"
 
       def install
-        ENV["GOPATH"] = buildpath
-
-        bin_path = buildpath/"src/github.com/ro-tex/test"
-        bin_path.install Dir["*"]
-        cd bin_path do
-            system "go", "build", "-o", bin/"test", "."
-        end
-        # ...
+        bin.install "test"
       end
     end
     if Hardware::CPU.intel?
@@ -64,14 +43,7 @@ class TestAT0011 < Formula
       sha256 "3ca1969ad629b4c627bd0ef9241e2281e662ae2958ad5b5aebd5e3c1a8d6493a"
 
       def install
-        ENV["GOPATH"] = buildpath
-
-        bin_path = buildpath/"src/github.com/ro-tex/test"
-        bin_path.install Dir["*"]
-        cd bin_path do
-            system "go", "build", "-o", bin/"test", "."
-        end
-        # ...
+        bin.install "test"
       end
     end
   end
