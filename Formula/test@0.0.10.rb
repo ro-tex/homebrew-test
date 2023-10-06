@@ -12,7 +12,7 @@ class TestAT0010 < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ro-tex/test/releases/download/v0.0.10/test_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      url "https://github.com/ro-tex/test/releases/download/v0.0.10/test_Darwin_arm64.tar.gz"
       sha256 "19fb8a757deaafdeec7a16f523ca3e4e28b72fa5e74c0b93ea679053fc100f3d"
 
       def install
@@ -20,7 +20,7 @@ class TestAT0010 < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ro-tex/test/releases/download/v0.0.10/test_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      url "https://github.com/ro-tex/test/releases/download/v0.0.10/test_Darwin_x86_64.tar.gz"
       sha256 "15e4a6faf20f40e121a1e8d54c78c9cb8b7617f04ee10cfd553d5af03ecdf8ff"
 
       def install
@@ -31,7 +31,7 @@ class TestAT0010 < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ro-tex/test/releases/download/v0.0.10/test_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      url "https://github.com/ro-tex/test/releases/download/v0.0.10/test_Linux_x86_64.tar.gz"
       sha256 "1d064661e4208bd45cf4022e7fe97b0725900a2c3350088376adcfea4a5f6cbd"
 
       def install
@@ -39,7 +39,7 @@ class TestAT0010 < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ro-tex/test/releases/download/v0.0.10/test_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      url "https://github.com/ro-tex/test/releases/download/v0.0.10/test_Linux_arm64.tar.gz"
       sha256 "d02e6fd3891876a0de2846c930e9191b2086fb0036b73816497a6204c0726a8c"
 
       def install

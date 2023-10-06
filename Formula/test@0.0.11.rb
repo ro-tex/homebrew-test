@@ -12,7 +12,7 @@ class TestAT0011 < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ro-tex/test/releases/download/v0.0.11/test_0.0.11_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      url "https://github.com/ro-tex/test/releases/download/v0.0.11/test_0.0.11_darwin_arm64.tar.gz"
       sha256 "fc76a2d29e6b6a2b6fb4f1a7e649269e9678e0f334a27ba6d87b8375ef75b83f"
 
       def install
@@ -20,7 +20,7 @@ class TestAT0011 < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ro-tex/test/releases/download/v0.0.11/test_0.0.11_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      url "https://github.com/ro-tex/test/releases/download/v0.0.11/test_0.0.11_darwin_amd64.tar.gz"
       sha256 "39715482ea40d095a81faf9f62bedf243f2ebbae09483fe0e90acd7f2e69157e"
 
       def install
@@ -31,7 +31,7 @@ class TestAT0011 < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ro-tex/test/releases/download/v0.0.11/test_0.0.11_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      url "https://github.com/ro-tex/test/releases/download/v0.0.11/test_0.0.11_linux_arm64.tar.gz"
       sha256 "43e14114ce3751a55dd9ba1f0e29c34475529eb75cb3a2c4cdfd1ebb9612f537"
 
       def install
@@ -39,7 +39,7 @@ class TestAT0011 < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ro-tex/test/releases/download/v0.0.11/test_0.0.11_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      url "https://github.com/ro-tex/test/releases/download/v0.0.11/test_0.0.11_linux_amd64.tar.gz"
       sha256 "3ca1969ad629b4c627bd0ef9241e2281e662ae2958ad5b5aebd5e3c1a8d6493a"
 
       def install
