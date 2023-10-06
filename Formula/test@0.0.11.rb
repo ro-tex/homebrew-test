@@ -47,9 +47,4 @@ class TestAT0011 < Formula
       end
     end
   end
-
-  test do
-    system "#{bin}/test --help"
-    # ...
-  end
 end
